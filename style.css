@@ -106,4 +106,50 @@
     font-size: 0.9rem;
     line-height: 1.3rem;
     color: var(--light-gray-magenta);
+    align-self: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        padding: 5rem;
+        height: 100vh;
+    }
+
+    .header {
+        text-align: left;
+    }
+
+    .header h1 {
+        font-size: 3.5rem;
+    }
+
+    .user-review-section {
+        grid-column: 1 / -1;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: unset;
+    }
+
+    .user-review:nth-child(1) {
+        align-self: start;
+    }
+
+    .user-review:nth-child(2) {
+        align-self: center;
+    }
+
+    .user-review:nth-child(3) {
+        align-self: end;
+    }
+
+    .star-review-section {
+        text-align: left;
+    }
+
+    .star-review {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
