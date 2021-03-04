@@ -16,6 +16,9 @@
 
 body {
     display: grid;
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left 0vw top 0vh, right 0vw bottom 0vh;
 }
 
 
@@ -119,6 +122,11 @@ body {
 
 
 @media only screen and (min-width: 1000px) {
+
+    body {
+        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+        
+    }
     .grid-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr;
